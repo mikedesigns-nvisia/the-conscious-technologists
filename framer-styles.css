@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f7f4;
+    color: #1a3a32;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #3a7ca5, #2fbf71, #3a7ca5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, rgba(240, 247, 244, 0.9) 0%, rgba(210, 235, 227, 0.9) 100%),
+                url('assets/svg/diamond-pattern.svg');
+    background-size: cover, 100px 100px;
+}
+
+.wave-pattern {
+    background-image: url("assets/svg/wave-pattern.svg");
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.consciousness-wave {
+    position: relative;
+    overflow: hidden;
+}
+
+.consciousness-wave::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(90deg, #3a7ca5, #2fbf71, #3a7ca5);
+    animation: wave 8s linear infinite;
+    background-size: 200% 100%;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(58, 124, 165, 0.2);
+}
+
+.leaf-decoration {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.leaf-1 {
+    top: 10%;
+    left: 5%;
+    background: url("assets/svg/leaf-1.svg") no-repeat;
+}
+
+.leaf-2 {
+    bottom: 15%;
+    right: 5%;
+    background: url("assets/svg/leaf-2.svg") no-repeat;
+}
+
+.watercolor-bg {
+    background: linear-gradient(135deg, rgba(240, 247, 244, 0.9) 0%, rgba(210, 235, 227, 0.9) 100%),
+                url('assets/svg/diamond-pattern.svg');
+    background-size: cover, 100px 100px;
+    background-blend-mode: normal, luminosity;
+    background-opacity: 1, 0.03;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #3a7ca5, #2fbf71);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(47, 191, 113, 0.3);
+}
+
+.btn-secondary {
+    border: 2px solid #3a7ca5;
+    color: #3a7ca5;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(58, 124, 165, 0.1);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2fbf71;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Animation styles */
+@keyframes blob {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+        transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+.animate-blob {
+    animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+    animation-delay: 4s;
+}

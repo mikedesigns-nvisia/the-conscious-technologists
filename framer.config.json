@@ -1,0 +1,154 @@
+{
+  "project": {
+    "name": "The Conscious Technologists",
+    "version": "1.0.0",
+    "type": "website",
+    "framework": "html-tailwind"
+  },
+  "components": [
+    {
+      "name": "Navigation",
+      "selector": "[data-framer-name='main-navigation']",
+      "props": {
+        "logo": {
+          "type": "component",
+          "selector": ".gradient-text"
+        },
+        "links": {
+          "type": "collection",
+          "selector": ".nav-link"
+        }
+      }
+    },
+    {
+      "name": "MobileMenu",
+      "selector": "[data-framer-name='mobile-menu']",
+      "props": {
+        "isOpen": {
+          "type": "boolean",
+          "default": false
+        },
+        "links": {
+          "type": "collection",
+          "selector": ".nav-link"
+        }
+      }
+    },
+    {
+      "name": "HeroSection",
+      "selector": "[data-framer-name='hero-section']",
+      "props": {
+        "headline": {
+          "type": "text",
+          "selector": "h1"
+        },
+        "subheadline": {
+          "type": "text",
+          "selector": "p"
+        },
+        "primaryCTA": {
+          "type": "component",
+          "selector": ".btn-primary"
+        },
+        "secondaryCTA": {
+          "type": "component",
+          "selector": ".btn-secondary"
+        }
+      }
+    },
+    {
+      "name": "AboutSection",
+      "selector": "[data-framer-name='about-section']",
+      "props": {
+        "headline": {
+          "type": "text",
+          "selector": "h2"
+        },
+        "description": {
+          "type": "text",
+          "selector": "p"
+        },
+        "cards": {
+          "type": "collection",
+          "selector": ".card-hover"
+        }
+      }
+    },
+    {
+      "name": "ManifestoSection",
+      "selector": "[data-framer-name='manifesto-section']",
+      "props": {
+        "headline": {
+          "type": "text",
+          "selector": "h2"
+        },
+        "principles": {
+          "type": "collection",
+          "selector": ".bg-white\\/90"
+        }
+      }
+    },
+    {
+      "name": "StoriesSection",
+      "selector": "[data-framer-name='stories-section']",
+      "props": {
+        "headline": {
+          "type": "text",
+          "selector": "h2"
+        },
+        "testimonials": {
+          "type": "collection",
+          "selector": ".testimonial-card"
+        }
+      }
+    },
+    {
+      "name": "JoinSection",
+      "selector": "[data-framer-name='join-section']",
+      "props": {
+        "headline": {
+          "type": "text",
+          "selector": "h2"
+        },
+        "form": {
+          "type": "component",
+          "selector": "form"
+        }
+      }
+    },
+    {
+      "name": "Footer",
+      "selector": "[data-framer-name='footer']",
+      "props": {
+        "logo": {
+          "type": "component",
+          "selector": ".gradient-text"
+        },
+        "socialLinks": {
+          "type": "collection",
+          "selector": ".flex.space-x-6 a"
+        },
+        "copyright": {
+          "type": "text",
+          "selector": ".text-center p:first-child"
+        }
+      }
+    }
+  ],
+  "assets": {
+    "svg": {
+      "path": "assets/svg/",
+      "files": [
+        "diamond-pattern.svg",
+        "wave-pattern.svg",
+        "leaf-1.svg",
+        "leaf-2.svg"
+      ]
+    }
+  },
+  "framerIntegration": {
+    "scripts": ["framer-scripts.js"],
+    "styles": ["framer-styles.css"],
+    "initialView": "#hero"
+  }
+}

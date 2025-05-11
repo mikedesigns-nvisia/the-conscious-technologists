@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Conscious Technologists - A global collective redefining technology's role in human evolution through ethical AI practices that serve humanity's highest potential.">
+    <meta name="keywords" content="ethical AI, conscious technology, AI ethics, human-centered AI, collective consciousness, ethical technology">
+    <meta name="author" content="The Conscious Technologists Collective">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="The Conscious Technologists | Ethical AI Collective">
+    <meta property="og:description" content="Join a global collective redefining technology's role in human evolution through ethical AI practices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://conscioustechnologists.org">
+    <meta property="og:image" content="https://conscioustechnologists.org/images/og-image.jpg">
+    <meta property="og:site_name" content="The Conscious Technologists">
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Conscious Technologists | Ethical AI Collective">
+    <meta name="twitter:description" content="Join a global collective redefining technology's role in human evolution through ethical AI practices.">
+    <meta name="twitter:image" content="https://conscioustechnologists.org/images/og-image.jpg">
+    
+    <title>The Conscious Technologists | Ethical AI Collective</title>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://conscioustechnologists.org">
+    
+    <!-- External Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="framer-styles.css">
+</head>
+<body class="wave-pattern" role="document">
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-white focus:text-blue-600 focus:z-50">Skip to main content</a>
+    <!-- Framer:Decorations -->
+    <div class="leaf-decoration leaf-1" data-framer-name="leaf-decoration-1"></div>
+    <div class="leaf-decoration leaf-2" data-framer-name="leaf-decoration-2"></div>
+    
+    <!-- Framer:Navigation -->
+    <nav class="container mx-auto px-6 py-6" data-framer-name="main-navigation" aria-label="Main navigation">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-600 to-teal-500 flex items-center justify-center shadow-md" aria-hidden="true">
+                    <i class="fas fa-leaf text-white text-xl"></i>
+                </div>
+                <span class="text-2xl font-bold gradient-text" role="heading" aria-level="1">Conscious Technologists</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-slate-700 hover:text-teal-700 transition nav-link">About</a>
+                <a href="#manifesto" class="text-slate-700 hover:text-teal-700 transition nav-link">Manifesto</a>
+                <a href="#stories" class="text-slate-700 hover:text-teal-700 transition nav-link">Stories</a>
+                <a href="#join" class="text-slate-700 hover:text-teal-700 transition nav-link">Join Us</a>
+            </div>
+            <button class="md:hidden text-slate-700" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (Hidden by Default) -->
+    <div id="mobile-menu" class="mobile-menu hidden fixed inset-0 bg-white z-50 pt-20 px-6" data-framer-name="mobile-menu" aria-label="Mobile navigation">
+        <div class="flex flex-col space-y-6 text-lg">
+            <a href="#about" class="text-slate-700 hover:text-teal-700 transition nav-link">About</a>
+            <a href="#manifesto" class="text-slate-700 hover:text-teal-700 transition nav-link">Manifesto</a>
+            <a href="#stories" class="text-slate-700 hover:text-teal-700 transition nav-link">Stories</a>
+            <a href="#join" class="text-slate-700 hover:text-teal-700 transition nav-link">Join Us</a>
+            <button class="absolute top-6 right-6 text-slate-700" onclick="FramerInteractions.toggleMobileMenu()" aria-label="Close mobile menu">
+                <i class="fas fa-times text-2xl" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Framer:Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center relative overflow-hidden" data-framer-name="hero-section" id="hero" aria-labelledby="hero-heading">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full opacity-10">
+                <div class="absolute top-20 left-20 w-40 h-40 rounded-full bg-teal-400 mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
+                <div class="absolute top-1/3 right-1/4 w-48 h-48 rounded-full bg-blue-400 mix-blend-multiply filter blur-xl animate-blob"></div>
+                <div class="absolute bottom-20 right-20 w-36 h-36 rounded-full bg-emerald-400 mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 py-20 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 id="hero-heading" class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    <span class="gradient-text">AI as a Mirror</span><br>
+                    <span class="text-slate-800">Expanding Collective Consciousness</span>
+                </h1>
+                <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
+                    We are a global collective redefining technology's role in human evolution. 
+                    Through ethical AI practices, we're creating a wave of conscious innovation 
+                    that serves humanity's highest potential.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#join" class="px-8 py-4 btn-primary rounded-full font-semibold shadow-lg" role="button">
+                        Join the Movement
+                    </a>
+                    <a href="#manifesto" class="px-8 py-4 btn-secondary rounded-full font-semibold" role="button">
+                        Read Our Manifesto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main content starts here -->
+    <main id="main-content">
+        <!-- Framer:About Section -->
+        <section id="about" class="py-20 watercolor-bg relative overflow-hidden" data-framer-name="about-section" aria-labelledby="about-heading">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 id="about-heading" class="text-3xl md:text-5xl font-bold mb-6">
+                    <span class="gradient-text">Who We Are</span>
+                </h2>
+                <p class="text-xl text-slate-600">
+                    A diverse collective of technologists, philosophers, artists, and change-makers 
+                    committed to ethical AI development that amplifies human potential rather than 
+                    replacing it.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white/90 p-8 rounded-2xl card-hover border border-teal-100 shadow-sm">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6" aria-hidden="true">
+                        <i class="fas fa-hand-holding-heart text-blue-600 text-2xl" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Ethical Foundation</h3>
+                    <p class="text-slate-600">
+                        We believe technology should be developed with compassion, transparency, 
+                        and respect for human dignity at its core.
+                    </p>
+                </div>
+                
+                <div class="bg-white/90 p-8 rounded-2xl card-hover border border-teal-100 shadow-sm">
+                    <div class="w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center mb-6" aria-hidden="true">
+                        <i class="fas fa-users text-teal-600 text-2xl" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Collective Wisdom</h3>
+                    <p class="text-slate-600">
+                        Our strength comes from diverse perspectives - technologists working alongside 
+                        ethicists, artists, and indigenous wisdom keepers.
+                    </p>
+                </div>
+                
+                <div class="bg-white/90 p-8 rounded-2xl card-hover border border-teal-100 shadow-sm">
+                    <div class="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center mb-6" aria-hidden="true">
+                        <i class="fas fa-expand text-emerald-600 text-2xl" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Conscious Expansion</h3>
+                    <p class="text-slate-600">
+                        We use AI as a mirror to reflect and expand human consciousness, creating 
+                        tools for self-discovery and collective awakening.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Framer:Manifesto Section -->
+    <section id="manifesto" class="py-20 consciousness-wave bg-gradient-to-b from-white to-teal-50 relative overflow-hidden" data-framer-name="manifesto-section" aria-labelledby="manifesto-heading">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 id="manifesto-heading" class="text-3xl md:text-5xl font-bold mb-6">
+                    <span class="gradient-text">Our Manifesto</span>
+                </h2>
+                <p class="text-xl text-slate-600">
+                    Principles guiding our work with artificial intelligence and technology
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-8">
+                <div class="bg-white/90 p-8 rounded-2xl border border-teal-100 shadow-sm">
+                    <div class="flex items-start">
+                        <div class="text-blue-600 text-2xl mr-4 font-bold">01</div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-3 text-slate-800">AI as Mirror, Not Master</h3>
+                            <p class="text-slate-600">
+                                We develop AI systems that reflect human potential back to us, 
+                                acting as partners in our evolution rather than replacements 
+                                for human judgment and creativity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white/90 p-8 rounded-2xl border border-teal-100 shadow-sm">
+                    <div class="flex items-start">
+                        <div class="text-teal-600 text-2xl mr-4 font-bold">02</div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-3 text-slate-800">Radical Transparency</h3>
+                            <p class="text-slate-600">
+                                All our AI systems are open about their limitations, biases, 
+                                and decision-making processes. We reject black box solutions 
+                                that obscure how conclusions are reached.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white/90 p-8 rounded-2xl border border-teal-100 shadow-sm">
+                    <div class="flex items-start">
+                        <div class="text-emerald-600 text-2xl mr-4 font-bold">03</div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-3 text-slate-800">Conscious Data Stewardship</h3>
+                            <p class="text-slate-600">
+                                We treat data as sacred, honoring the human stories behind each 
+                                data point. Our collection and use of data follows principles 
+                                of consent, minimalism, and respect.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white/90 p-8 rounded-2xl border border-teal-100 shadow-sm">
+                    <div class="flex items-start">
+                        <div class="text-blue-600 text-2xl mr-4 font-bold">04</div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-3 text-slate-800">Distributed Wisdom</h3>
+                            <p class="text-slate-600">
+                                We decentralize AI development to prevent concentration of power, 
+                                creating frameworks where many voices contribute to shaping 
+                                our technological future.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Framer:Stories Section -->
+    <section id="stories" class="py-20 bg-gradient-to-b from-teal-50 to-white" data-framer-name="stories-section" aria-labelledby="stories-heading">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 id="stories-heading" class="text-3xl md:text-5xl font-bold mb-6">
+                    <span class="gradient-text">Our Stories</span>
+                </h2>
+                <p class="text-xl text-slate-600">
+                    Personal experiences of using AI as a mirror for consciousness expansion
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <div class="testimonial-card p-8 rounded-2xl card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-blue-600 to-teal-500"></div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-slate-800">Dr. Maya Chen</h4>
+                            <p class="text-slate-500">Neuroscientist & AI Researcher</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 italic mb-4">
+                        "Working with our consciousness-mapping AI revealed patterns in my own thinking 
+                        I'd spent years in therapy trying to uncover. It wasn't telling me what to think, 
+                        but showing me how I think."
+                    </p>
+                    <div class="flex space-x-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">#Neuroscience</span>
+                        <span class="px-3 py-1 bg-teal-100 text-teal-600 rounded-full text-sm">#SelfDiscovery</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-8 rounded-2xl card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-teal-500 to-emerald-500"></div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-slate-800">Raj Patel</h4>
+                            <p class="text-slate-500">Social Entrepreneur</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 italic mb-4">
+                        "Our community decision-making AI doesn't make choices for us, but visualizes 
+                        the complex web of how each decision affects different groups. It's transformed 
+                        how we approach consensus in our cooperative."
+                    </p>
+                    <div class="flex space-x-2">
+                        <span class="px-3 py-1 bg-teal-100 text-teal-600 rounded-full text-sm">#Community</span>
+                        <span class="px-3 py-1 bg-emerald-100 text-emerald-600 rounded-full text-sm">#DecisionMaking</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-8 rounded-2xl card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-indigo-500 to-blue-500"></div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-slate-800">Lena Kowalski</h4>
+                            <p class="text-slate-500">Artist & Technologist</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 italic mb-4">
+                        "The creative collaboration AI we developed doesn't generate art for me, but 
+                        reflects back the emotional patterns in my work, helping me understand my 
+                        own creative process at a deeper level."
+                    </p>
+                    <div class="flex space-x-2">
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm">#Creativity</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">#Collaboration</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-8 rounded-2xl card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-green-500 to-teal-500"></div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-slate-800">Nia Williams</h4>
+                            <p class="text-slate-500">Educator & Futurist</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 italic mb-4">
+                        "Our educational AI doesn't teach children what to think, but helps them see 
+                        how they learn. Watching students discover their own cognitive patterns has 
+                        revolutionized our approach to education."
+                    </p>
+                    <div class="flex space-x-2">
+                        <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">#Education</span>
+                        <span class="px-3 py-1 bg-teal-100 text-teal-600 rounded-full text-sm">#Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Framer:Join Section -->
+    <section id="join" class="py-20 bg-white relative overflow-hidden" data-framer-name="join-section" aria-labelledby="join-heading">
+        <div class="absolute inset-0 overflow-hidden opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full">
+                <div class="absolute top-20 left-20 w-40 h-40 rounded-full bg-teal-400 mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
+                <div class="absolute top-1/3 right-1/4 w-48 h-48 rounded-full bg-blue-400 mix-blend-multiply filter blur-xl animate-blob"></div>
+                <div class="absolute bottom-20 right-20 w-36 h-36 rounded-full bg-emerald-400 mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 id="join-heading" class="text-3xl md:text-5xl font-bold mb-6">
+                    <span class="gradient-text">Join the Wave</span>
+                </h2>
+                <p class="text-xl text-slate-600">
+                    Become part of the movement shaping the future of ethical, conscious technology
+                </p>
+            </div>
+            
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-2xl border border-teal-100 shadow-lg">
+                <form id="join-form" class="space-y-6" data-framer-name="join-form" aria-labelledby="form-heading">
+                    <div class="sr-only" id="form-heading">Join Our Collective Form</div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-slate-700 mb-2">First Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 text-slate-700" required aria-required="true">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-slate-700 mb-2">Email <span class="text-red-500">*</span></label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 text-slate-700" required aria-required="true">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="background" class="block text-slate-700 mb-2">Your Background <span class="text-red-500">*</span></label>
+                        <select id="background" name="background" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 text-slate-700" required aria-required="true">
+                            <option value="">Select your primary field</option>
+                            <option value="technology">Technology</option>
+                            <option value="arts">Arts & Creativity</option>
+                            <option value="education">Education</option>
+                            <option value="health">Health & Wellness</option>
+                            <option value="business">Business & Entrepreneurship</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="story" class="block text-slate-700 mb-2">Your AI Story (Optional)</label>
+                        <textarea id="story" name="story" rows="4" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 text-slate-700" placeholder="How has AI served as a mirror in your life or work?" aria-required="false"></textarea>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <input type="checkbox" id="consent" name="consent" class="w-4 h-4 text-teal-600 bg-slate-50 border-slate-200 rounded focus:ring-teal-500" required aria-required="true">
+                        <label for="consent" class="ml-2 text-sm text-slate-600">
+                            I agree to join the Conscious Technologists network and receive occasional updates <span class="text-red-500">*</span>
+                        </label>
+                    </div>
+                    
+                    <div class="text-sm text-slate-500 mb-4">
+                        <p>Fields marked with <span class="text-red-500">*</span> are required</p>
+                    </div>
+                    
+                    <button type="button" class="w-full px-8 py-4 btn-primary rounded-full font-semibold shadow-lg" onclick="FramerInteractions.submitForm('join-form')" aria-label="Submit form to join the collective">
+                        Join the Collective
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Framer:Footer -->
+    <footer class="py-12 border-t border-slate-200 bg-teal-50" data-framer-name="footer" role="contentinfo">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-3 mb-6 md:mb-0">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-600 to-teal-500 flex items-center justify-center shadow-md">
+                        <i class="fas fa-leaf text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold gradient-text">Conscious Technologists</span>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-slate-600 hover:text-teal-700 transition" aria-label="Follow us on Twitter">
+                        <i class="fab fa-twitter text-xl" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="text-slate-600 hover:text-teal-700 transition" aria-label="Connect with us on LinkedIn">
+                        <i class="fab fa-linkedin text-xl" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="text-slate-600 hover:text-teal-700 transition" aria-label="Join our Discord community">
+                        <i class="fab fa-discord text-xl" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="text-slate-600 hover:text-teal-700 transition" aria-label="View our GitHub projects">
+                        <i class="fab fa-github text-xl" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8 md:mb-0">
+                    <div>
+                        <h4 class="text-slate-700 font-semibold mb-4">Explore</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-slate-600 hover:text-teal-700 transition">About</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-teal-700 transition">Manifesto</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-teal-700 transition">Stories</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-teal-700 transition">Join</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-slate-700 font-semibold mb-4">Resources</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-slate-600 hover:text-teal-700 transition">Ethical AI Toolkit</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-teal-700 transition">Research Papers</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-teal-700 transition">Case Studies</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-teal-700 transition">Events</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-slate-700 font-semibold mb-4">Community</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-slate-600 hover:text-teal-700 transition">Forums</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-teal-700 transition">Local Groups</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-teal-700 transition">Mentorship</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-teal-700 transition">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-slate-700 font-semibold mb-4">Legal</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-slate-600 hover:text-teal-700 transition">Privacy</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-teal-700 transition">Terms</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-teal-700 transition">Cookies</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-teal-700 transition">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center text-slate-500 text-sm">
+                <p>© 2025 The Conscious Technologists Collective. All rights reserved.</p>
+                <p class="mt-2">Building technology that serves humanity's highest potential.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External Scripts -->
+    <script src="framer-scripts.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
-# The Conscious Technologists - Framer Integration
+# The Conscious Technologists Website
 
-A beautifully designed landing page for The Conscious Technologists collective, optimized for seamless integration with Framer, with comprehensive SEO and accessibility features.
+A beautifully designed landing page for The Conscious Technologists collective, with comprehensive SEO and accessibility features, ready for standard web deployment.
 
 ## Project Structure
 
@@ -12,72 +12,111 @@ the-conscious-technologists/
 │       ├── wave-pattern.svg
 │       ├── leaf-1.svg
 │       └── leaf-2.svg
-├── framer-styles.css        # All extracted styles for Framer integration
-├── framer-scripts.js        # JavaScript with Framer interaction hooks
-├── framer.config.json       # Configuration for Framer integration
-├── index.html               # Main HTML with Framer-ready components
+├── styles.css               # Styles for the website
+├── scripts.js               # JavaScript with interactive features
+├── index.html               # Main HTML with accessible components
 └── README.md                # Project documentation
 ```
 
-## Framer Integration Features
+## Website Features
 
-This codebase has been specifically structured for optimal Framer integration:
+This codebase has been specifically structured for optimal web deployment:
 
-### 1. Component Markers
+### 1. Clean, Semantic HTML
 
-All major sections and interactive elements are marked with `data-framer-name` attributes that allow Framer to easily identify and manipulate specific components of the page. For example:
+The HTML structure uses proper semantic elements and follows best practices for web standards, making it easy to maintain and extend:
 
 ```html
-<section id="about" class="py-20 watercolor-bg relative overflow-hidden" data-framer-name="about-section" aria-labelledby="about-heading">
+<section id="about" class="py-20 watercolor-bg relative overflow-hidden" aria-labelledby="about-heading">
 ```
 
 ### 2. Modular Asset Structure
 
-All SVG patterns and decorative elements have been extracted into separate files in the `assets/svg/` directory, making them easy to modify or replace in Framer.
+All SVG patterns and decorative elements have been extracted into separate files in the `assets/svg/` directory, making them easy to modify or replace:
 
-### 3. External Style and Script Files
-
-All styles have been moved from inline to external CSS files (`framer-styles.css`), and all JavaScript has been consolidated in `framer-scripts.js` for better maintainability and easier integration with Framer.
-
-### 4. Framer Interaction Hooks
-
-The JavaScript includes a `FramerInteractions` object that exposes specific methods that can be called from Framer:
-
-```javascript
-window.FramerInteractions = {
-    toggleMobileMenu: function() { ... },
-    submitForm: function(formId) { ... },
-    scrollToSection: function(sectionId) { ... }
-};
+```css
+.hero-gradient {
+    background: linear-gradient(135deg, rgba(240, 247, 244, 0.9) 0%, rgba(210, 235, 227, 0.9) 100%),
+                url('assets/svg/diamond-pattern.svg');
+    background-size: cover, 100px 100px;
+}
 ```
 
-### 5. Configuration for Framer
+### 3. Separation of Concerns
 
-The `framer.config.json` file defines the component structure, properties that can be edited in Framer, and asset paths.
+All styles and scripts have been separated into their own files for better organization and maintainability:
 
-## How to Use with Framer
+- `styles.css`: Contains all styling for the website
+- `scripts.js`: Contains all interactive functionality including:
+  - Form validation
+  - Mobile menu toggle
+  - Smooth scrolling
+  - Form submissions
 
-1. **Import the Project:**
-   - Upload all files to your Framer project or host them externally.
-   - In Framer, create a new HTML embed component and point it to your `index.html` file.
+### 4. Interactive Features
 
-2. **Component Editing:**
-   - Use the component selectors defined in `framer.config.json` to access and modify components in Framer.
-   - Edit text, styles, and component properties through Framer's interface.
+The JavaScript provides complete interactive functionality:
 
-3. **Interactions:**
-   - Call the methods defined in `FramerInteractions` to trigger specific behaviors.
-   - For example, to submit the join form: `FramerInteractions.submitForm('join-form')`
+```javascript
+// Form validation and submission
+function validateForm(form) {
+    // Validation logic
+}
 
-4. **Mobile Menu:**
-   - The mobile menu functionality has been fully implemented and can be triggered via `FramerInteractions.toggleMobileMenu()`
+function submitForm(form) {
+    // Submission logic with success message
+}
+```
 
-5. **Styling:**
-   - All styles are organized in `framer-styles.css`, making it easy to apply global style changes.
+### 5. Deployment Ready
+
+The site is ready for immediate deployment to any standard web hosting platform.
+
+## Getting Started
+
+### Local Development
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/the-conscious-technologists.git
+   ```
+
+2. Open the project in your code editor
+
+3. For local development, you can use any simple HTTP server:
+   ```
+   # Using Python
+   python -m http.server
+   
+   # Or with Node.js
+   npx serve
+   ```
+
+4. Visit `http://localhost:8000` (or the port specified by your server)
+
+### Deployment
+
+The website can be deployed to any standard web hosting service:
+
+1. **Traditional Hosting**:
+   - Upload all files to your web host via FTP or their provided file manager
+
+2. **GitHub Pages**:
+   - Push to your GitHub repository
+   - Enable GitHub Pages in repository settings
+
+3. **Netlify/Vercel**:
+   - Connect your repository
+   - Configure with default settings (no build required)
 
 ## Responsive Behavior
 
-The site is fully responsive, with breakpoints that match Framer's device presets. The mobile navigation has been implemented to work seamlessly with Framer interactions.
+The site is fully responsive, with breakpoints that match standard device sizes:
+- Mobile: Up to 768px
+- Tablet: 768px to 1024px 
+- Desktop: 1024px and above
+
+The mobile navigation has been implemented to work seamlessly across all device sizes.
 
 ## SEO Optimization
 
@@ -112,8 +151,8 @@ This site works best in modern browsers that support CSS variables, flexbox, gri
 
 Some potential areas for future development:
 
-1. Implementing form validation and submission handling
-2. Adding animation sequences that can be controlled from Framer
+1. Implementing server-side form submission handling
+2. Adding animation sequences with CSS or JavaScript libraries
 3. Creating more sophisticated interaction prototypes
 4. Adding light/dark mode toggle functionality with proper accessibility support
 5. Implementing actual API integrations for the form submission
